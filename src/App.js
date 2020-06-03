@@ -1,24 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './components/header_footer/Header';
+import Featured from './components/featured/Featured';
+import VenueNFO from './components/venueNFO/VenueNFO';
+import Highlight from './components/highlight/Highlight';
+import Location from './components/location/Location';
+import Footer from './components/header_footer/Footer';
+import Pricing from './components/pricing/Pricing';
+import './resources/styles.css';
+import { Element } from 'react-scroll';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Element name='featured'>
+        <Featured />
+      </Element>
+      <Element name='venueNFO'>
+        <VenueNFO />
+      </Element>
+      <Element name='highlights'>
+        <Highlight />
+      </Element>
+      <Element name='pricing'>
+        <Pricing />
+      </Element>
+      <Element name='location'>
+        <Location />
+      </Element>
+      <Footer />
     </div>
   );
 }

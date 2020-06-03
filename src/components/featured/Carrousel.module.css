@@ -1,0 +1,9 @@
+.CarrouselWrapper{
+    height: 700px;
+    overflow: hidden;
+    
+}
+
+.CarrouselImg{
+    background-size: cover !important;
+}

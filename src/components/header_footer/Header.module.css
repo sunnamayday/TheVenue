@@ -1,0 +1,20 @@
+/* .Header {
+    position: fixed;
+    background-color: #2f2f2f;
+    box-shadow: none;
+    padding: 10px 0;
+} */
+
+.HeaderLogo {
+    flex-grow: 1;
+}
+
+.HeaderLogoVenue {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.HeaderLogoTitle {
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+}
